@@ -42,7 +42,7 @@
 
 ```bash
 # 1. 프로젝트 클론
-git clone https://github.com/your-username/apilot-api-console.git
+git clone https://github.com/min2h/apilot-api-console.git
 cd apilot-api-console
 
 # 2. 백엔드 빌드
