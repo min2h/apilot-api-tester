@@ -23,6 +23,7 @@
   깔끔하고 눈에 편한 인터페이스
 
 ---
+
 🛠 기술 스택
 Frontend: React, Vite, TailwindCSS
 
@@ -32,6 +33,7 @@ Build Tools: Maven, npm
 
 Deployment: Docker, GitHub Actions
 
+---
 
 ## 🖥️ 사용 예시
 
