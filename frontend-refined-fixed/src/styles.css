@@ -1,0 +1,57 @@
+:root{
+  --bg:#0f1217; --panel:#151a22; --card:#1a2030; --line:#2a3242;
+  --text:#e9eef7; --muted:#9aa3b2; --brand:#6aa3ff; --accent:#7be0b5; --danger:#ff7b89;
+  --shadow: 0 6px 24px rgba(0,0,0,.45);
+  --radius: 14px;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:linear-gradient(180deg,#0c1015,#0f1217);color:var(--text);font-family:var(--sans)}
+.wrap{max-width:1400px;margin:0 auto;padding:18px 20px 28px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);position:sticky;top:12px;z-index:10}
+.brand{font-weight:800;letter-spacing:.2px}
+.brand .muted{color:var(--muted);font-weight:600}
+.actions{display:flex;gap:10px;flex:1;justify-content:flex-end}
+.method{padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#0f141c;color:var(--text)}
+.url{flex:1;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#0f141c;color:var(--text);outline:none}
+.grid{display:grid;grid-template-columns: 1.05fr .95fr; gap:16px;margin-top:16px}
+.col{display:flex;flex-direction:column;gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.card-h{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--line)}
+.card-title{font-weight:700}
+.card-b{padding:14px}
+.hint{color:var(--muted);font-size:12px}
+.btn{padding:8px 12px;border-radius:12px;border:1px solid var(--line);background:#141925;color:var(--text);cursor:pointer}
+.btn:hover{background:#182133}
+.btn.primary{background:linear-gradient(180deg,#2a7bff,#1f66d1);border-color:#2b5cc6}
+.btn.ghost{background:transparent}
+.btn.danger{border-color:#5a2630;color:#ffb3bd;background:transparent}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tab{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#131823;color:var(--text);cursor:pointer}
+.tab.active{background:linear-gradient(180deg,#1a2436,#151d2c);box-shadow: inset 0 0 0 1px #39507a}
+.tabs{display:flex;gap:8px;margin:4px 2px 6px}
+.kv-head,.kv-row{display:grid;grid-template-columns: 1.2fr 1.8fr 110px; gap:8px; align-items:center}
+.kv-head{font-size:12px;color:var(--muted);margin-bottom:6px}
+.kv-row input{width:100%;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:#0f141c;color:var(--text)}
+.ta-r{text-align:right}
+.mt-8{margin-top:8px}
+.textarea{width:100%;min-height:220px;background:#0f141c;border:1px solid var(--line);border-radius:12px;color:var(--text);padding:10px;font-family:var(--mono)}
+.code{white-space:pre; overflow:auto; background:#0f141c;border:1px solid var(--line);border-radius:12px;padding:12px;font-family:var(--mono)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.seg-item{display:flex;align-items:center;gap:8px;padding:6px 10px;cursor:pointer;color:var(--muted)}
+.seg-item.on{background:#1a2231;color:var(--text)}
+.seg-item input{display:none}
+.two{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.resp-status{display:flex;gap:10px;align-items:center}
+.badge{padding:4px 8px;border-radius:999px;font-weight:700;border:1px solid var(--line);}
+.badge.ok{color:#7be0b5;border-color:#1b4638;background:#0f2a21}
+.badge.err{color:#ffb3bd;border-color:#5a2630;background:#2a151a}
+.copyrow{display:flex;gap:8px;align-items:center;justify-content:space-between}
+.small{font-size:12px;color:var(--muted)}
+table.header{width:100%;border-collapse:collapse}
+table.header th, table.header td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;font-size:13px}
+hr.sep{border:0;border-top:1px dashed var(--line);margin:12px 0}
+.placeholder{color:var(--muted);font-size:14px}
+footer.note{color:var(--muted);font-size:12px;margin-top:8px}
